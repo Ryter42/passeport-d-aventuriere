@@ -6,6 +6,12 @@
  *  - les textes de l'accueil (thème "Passeport d'Aventurière")
  *  - les images, titres, descriptions, liens de chaque page
  *
+ * IMPORTANT : l'image affichée dans le polaroid de l'accueil est
+ * totalement INDEPENDANTE des 11 photos du passeport. Elle est définie
+ * directement dans index.html (balise <img> à l'intérieur de la classe
+ * .polaroid-photo) et pointe vers "images/polaroid-cover.jpg".
+ * Remplacer vos photos 01.jpg à 11.jpg n'affecte jamais le polaroid.
+ *
  * Structure de chaque activité :
  * {
  *   id: 1,
@@ -28,6 +34,7 @@ const PASSPORT_CONFIG = {
     titleScript: "d'Aventurière",
     edition: "Édition Anniversaire — 2026",
     subtitle: "Un voyage unique,<br>des souvenirs inoubliables,<br>et surtout... toi !",
+    // Légende affichée sous le polaroid décoratif de l'accueil
     polaroidCaption: "Le monde<br>t'attend...",
     badgeLabel: "Destination",
     badgeValue: "30 ANS",
