@@ -302,37 +302,33 @@ img { max-width: 100%; display: block; }
 }
 .polaroid-heart { display: inline-block; font-size: 0.7rem; }
 
-/* ---------- Boussole décorative ---------- */
-.compass { width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; position: relative; }
-
-.compass-ring {
-  width: 100%; height: 100%; border-radius: 50%;
-  border: 1.5px solid var(--sepia);
-  display: flex; align-items: center; justify-content: center;
+/* ---------- Boussole / rose des vents (fidèle à l'image de référence) ---------- */
+.compass {
   position: relative;
+  width: 108px;
+  height: 108px;
   color: var(--gold);
-  opacity: 0.88;
-  animation: spin-slow 45s linear infinite;
+}
+
+.compass-svg {
+  display: block;
+  animation: spin-slow 60s linear infinite;
 }
 
 @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
+/* Les lettres cardinales restent fixes (ne tournent pas avec le disque) */
 .compass-n, .compass-e, .compass-s, .compass-o {
   position: absolute;
   font-family: var(--font-display);
-  font-size: 0.66rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: var(--ink-soft);
-  animation: counter-spin-slow 45s linear infinite;
 }
-.compass-n { top: 3px; left: 50%; transform: translateX(-50%); }
-.compass-s { bottom: 3px; left: 50%; transform: translateX(-50%); }
-.compass-e { right: 3px; top: 50%; transform: translateY(-50%); }
-.compass-o { left: 3px; top: 50%; transform: translateY(-50%); }
-
-@keyframes counter-spin-slow { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
-
-.compass-needle { position: relative; z-index: 1; }
+.compass-n { top: -14px; left: 50%; transform: translateX(-50%); }
+.compass-s { bottom: -14px; left: 50%; transform: translateX(-50%); }
+.compass-e { right: -14px; top: 50%; transform: translateY(-50%); }
+.compass-o { left: -14px; top: 50%; transform: translateY(-50%); }
 
 /* ---------- Tampon badge (Destination / 30 ANS) ---------- */
 .stamp--badge {
@@ -372,7 +368,7 @@ img { max-width: 100%; display: block; }
    BOUTON PRINCIPAL
    ===================================================================== */
 .btn-open {
-  margin-top: 10px;
+  margin-top: 12px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -586,7 +582,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-bright); o
 @media (max-height: 680px) {
   .home-content { padding-top: 56px; gap: 4px; }
   .polaroid { width: 100px; padding: 6px 6px 18px; }
-  .compass { width: 84px; height: 84px; }
+  .compass { width: 90px; height: 90px; }
+  .compass-n, .compass-s { font-size: 0.62rem; }
   .stamp--badge { width: 96px; padding: 6px 7px 7px; }
   .page-image-frame { aspect-ratio: 4 / 3; }
   .passport-topbar { padding: 8px 16px 6px; }
@@ -594,7 +591,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-bright); o
 }
 
 @media (max-height: 600px) {
-  .compass { display: none; }
+  .compass { width: 70px; height: 70px; }
+  .compass-n, .compass-s, .compass-e, .compass-o { display: none; }
   .mid-row { justify-content: space-around; }
 }
 
@@ -602,4 +600,5 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-bright); o
   .polaroid { width: 92px; }
   .stamp--badge { width: 88px; }
   .stamp-badge-note { display: none; }
+  .compass { width: 82px; height: 82px; }
 }

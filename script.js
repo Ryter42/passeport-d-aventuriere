@@ -37,10 +37,8 @@
   const total = activities.length;
   let current = 0;
 
-  /* ---------- Champs autorisant du HTML simple (ex: <br>) ---------- */
   const HTML_ALLOWED_FIELDS = new Set(['subtitle', 'polaroidCaption', 'badgeNote']);
 
-  /* ---------- Appliquer les textes d'accueil depuis la config ---------- */
   function applyHomeTexts() {
     const cfg = (typeof PASSPORT_CONFIG !== 'undefined') ? PASSPORT_CONFIG.home : null;
     if (!cfg) return;
@@ -57,7 +55,6 @@
     });
   }
 
-  /* ---------- Génération des pages du passeport ---------- */
   function buildPages() {
     const frag = document.createDocumentFragment();
 
@@ -226,7 +223,6 @@
     window.setTimeout(() => btnOpen.focus({ preventScroll: true }), 50);
   }
 
-  /* ---------- Swipe tactile ---------- */
   let touchStartX = 0;
   let touchStartY = 0;
   let touchDeltaX = 0;
@@ -268,7 +264,6 @@
     touchDeltaX = 0;
   });
 
-  /* ---------- Clavier ---------- */
   document.addEventListener('keydown', (e) => {
     const passportActive = screenPassport.classList.contains('is-active');
     if (!passportActive) return;
@@ -277,13 +272,11 @@
     else if (e.key === 'Escape') { e.preventDefault(); backToHome(); }
   });
 
-  /* ---------- Listeners boutons ---------- */
   btnOpen.addEventListener('click', openPassport);
   btnHome.addEventListener('click', backToHome);
   btnPrev.addEventListener('click', prev);
   btnNext.addEventListener('click', next);
 
-  /* ---------- Init ---------- */
   applyHomeTexts();
   buildPages();
   buildDots();

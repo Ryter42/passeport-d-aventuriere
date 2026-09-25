@@ -22,16 +22,13 @@
  */
 
 const PASSPORT_CONFIG = {
-  // Textes de l'écran d'accueil (design fidèle à la couverture de référence)
   home: {
     kicker: "République des Rêves",
     title: "Passeport",
     titleScript: "d'Aventurière",
     edition: "Édition Anniversaire — 2026",
     subtitle: "Un voyage unique,<br>des souvenirs inoubliables,<br>et surtout... toi !",
-    // Légende sous la photo polaroid (accepte <br> pour un retour à la ligne)
     polaroidCaption: "Le monde<br>t'attend...",
-    // Petit tampon en bas à droite du bloc central
     badgeLabel: "Destination",
     badgeValue: "30 ANS",
     badgeNote: "Parce que tu mérites<br>le plus beau<br>des voyages !",
