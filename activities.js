@@ -9,13 +9,13 @@
  * IMPORTANT : l'image affichée dans le polaroid de l'accueil est
  * totalement INDEPENDANTE des 11 photos du passeport. Elle est définie
  * directement dans index.html (balise <img> à l'intérieur de la classe
- * .polaroid-photo) et pointe vers "images/polaroid-cover.JPG".
- * Remplacer vos photos 01.JPG à 11.JPG n'affecte jamais le polaroid.
+ * .polaroid-photo) et pointe vers "images/polaroid-cover.jpg".
+ * Remplacer vos photos 01.jpg à 11.jpg n'affecte jamais le polaroid.
  *
  * Structure de chaque activité :
  * {
  *   id: 1,
- *   image: "images/01.JPG",
+ *   image: "images/01.jpg",
  *   alt: "...",
  *   title: "...",
  *   description: "...",
@@ -49,7 +49,7 @@ const PASSPORT_CONFIG = {
 const activities = [
   {
     id: 1,
-    image: "images/01.JPG",
+    image: "images/01.jpg",
     alt: "Photo souvenir 1",
     title: "Le tout début",
     description: "Une petite aventure commence ici...",
@@ -61,7 +61,7 @@ const activities = [
   },
   {
     id: 2,
-    image: "images/02.JPG",
+    image: "images/02.jpg",
     alt: "Photo souvenir 2",
     title: "Chapitre deux",
     description: "",
@@ -72,7 +72,7 @@ const activities = [
   },
   {
     id: 3,
-    image: "images/03.JPG",
+    image: "images/03.jpg",
     alt: "Photo souvenir 3",
     title: "",
     description: "",
@@ -81,18 +81,18 @@ const activities = [
   },
   {
     id: 4,
-    image: "images/04.JPG",
+    image: "images/04.jpg",
     alt: "Photo souvenir 4",
     title: "Un moment à part",
     description: "Petite note pour se rappeler ce jour-là.",
     stamp: "04",
     links: [
-      { label: "Voir la photo", url: "images/04.JPG", icon: "photo" }
+      { label: "Voir la photo", url: "images/04.jpg", icon: "photo" }
     ]
   },
   {
     id: 5,
-    image: "images/05.JPG",
+    image: "images/05.jpg",
     alt: "Photo souvenir 5",
     title: "",
     description: "",
@@ -101,7 +101,7 @@ const activities = [
   },
   {
     id: 6,
-    image: "images/06.JPG",
+    image: "images/06.jpg",
     alt: "Photo souvenir 6",
     title: "À mi-chemin",
     description: "",
@@ -112,7 +112,7 @@ const activities = [
   },
   {
     id: 7,
-    image: "images/07.JPG",
+    image: "images/07.jpg",
     alt: "Photo souvenir 7",
     title: "",
     description: "",
@@ -121,7 +121,7 @@ const activities = [
   },
   {
     id: 8,
-    image: "images/08.JPG",
+    image: "images/08.jpg",
     alt: "Photo souvenir 8",
     title: "",
     description: "",
@@ -130,7 +130,7 @@ const activities = [
   },
   {
     id: 9,
-    image: "images/09.JPG",
+    image: "images/09.jpg",
     alt: "Photo souvenir 9",
     title: "Presque à la fin",
     description: "",
@@ -141,7 +141,7 @@ const activities = [
   },
   {
     id: 10,
-    image: "images/10.JPG",
+    image: "images/10.jpg",
     alt: "Photo souvenir 10",
     title: "",
     description: "",
@@ -150,7 +150,7 @@ const activities = [
   },
   {
     id: 11,
-    image: "images/11.JPG",
+    image: "images/11.jpg",
     alt: "Photo souvenir 11",
     title: "Merci pour tout",
     description: "La fin de ce petit passeport, mais pas de l'aventure.",
