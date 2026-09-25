@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+<title>Passeport d'Aventurière</title>
+<meta name="description" content="Un passeport d'aventures numérique, à découvrir page après page." />
+<meta name="theme-color" content="#c9b077" />
+<link rel="preload" as="image" href="images/01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Great+Vibes&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ ECRAN 1 : ACCUEIL (couverture de passeport, façon photo réf.) ============ -->
+  <section id="screen-home" class="screen screen-home is-active" aria-hidden="false">
+
+    <div class="paper-texture" aria-hidden="true"></div>
+    <div class="world-map" aria-hidden="true"></div>
+
+    <!-- Feuilles de palmier décoratives -->
+    <svg class="leaf leaf--tl" viewBox="0 0 200 200" aria-hidden="true">
+      <path d="M100 190 C 95 140, 60 110, 10 95 C 55 100, 90 120, 100 150 C 92 110, 55 85, 15 55 C 60 65, 95 90, 105 125 C 100 85, 70 55, 40 20 C 80 35, 105 65, 112 105 C 112 70, 95 35, 85 5 C 110 25, 122 60, 118 100 C 128 70, 125 35, 130 10 C 145 35, 145 75, 128 110 C 145 90, 155 65, 168 45 C 165 75, 150 100, 128 120 C 150 108, 165 95, 182 88 C 170 112, 148 128, 122 135 C 145 130, 163 128, 180 132 C 158 145, 132 148, 112 142 C 130 150, 145 158, 155 170 C 132 168, 112 160, 100 190 Z" fill="currentColor"/>
+    </svg>
+    <svg class="leaf leaf--br" viewBox="0 0 200 200" aria-hidden="true">
+      <path d="M100 190 C 95 140, 60 110, 10 95 C 55 100, 90 120, 100 150 C 92 110, 55 85, 15 55 C 60 65, 95 90, 105 125 C 100 85, 70 55, 40 20 C 80 35, 105 65, 112 105 C 112 70, 95 35, 85 5 C 110 25, 122 60, 118 100 C 128 70, 125 35, 130 10 C 145 35, 145 75, 128 110 C 145 90, 155 65, 168 45 C 165 75, 150 100, 128 120 C 150 108, 165 95, 182 88 C 170 112, 148 128, 122 135 C 145 130, 163 128, 180 132 C 158 145, 132 148, 112 142 C 130 150, 145 158, 155 170 C 132 168, 112 160, 100 190 Z" fill="currentColor"/>
+    </svg>
+
+    <!-- Tampon rond "GOOD VIBES ONLY" -->
+    <div class="stamp stamp--round" aria-hidden="true">
+      <svg viewBox="0 0 120 120" width="100%" height="100%">
+        <defs>
+          <path id="circlePath" d="M 60,60 m -42,0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0" />
+        </defs>
+        <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 3"/>
+        <text font-size="10.5" letter-spacing="2.5" fill="currentColor" font-family="'Playfair Display', serif" font-weight="700">
+          <textPath href="#circlePath" startOffset="2%">GOOD VIBES ★ ONLY ★</textPath>
+        </text>
+        <path d="M40 60 L58 60 L52 52 M58 60 L52 68 M58 60 L80 60 L74 54 M80 60 L74 66" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- Tampon rectangulaire "VOYAGER EXPLORER S'ÉMERVEILLER" -->
+    <div class="stamp stamp--rect" aria-hidden="true">
+      <svg viewBox="0 0 20 20" class="stamp-rect-plane" width="16" height="16"><path d="M2 11l16-7-6 16-2-7-6-2z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      <span>VOYAGER</span>
+      <span>EXPLORER</span>
+      <span>S'ÉMERVEILLER</span>
+    </div>
+
+    <div class="home-content">
+
+      <p class="home-kicker" data-i="kicker">République des Rêves</p>
+      <div class="divider" aria-hidden="true"><span>♡</span></div>
+
+      <h1 class="home-title">
+        <span class="home-title-main" data-i="title">Passeport</span>
+        <span class="home-title-script" data-i="titleScript">d'Aventurière</span>
+      </h1>
+
+      <div class="divider divider--small" aria-hidden="true"></div>
+      <p class="home-edition" data-i="edition">Édition Anniversaire — 2026</p>
+
+      <p class="home-subtitle" data-i="subtitle">Un voyage unique,<br>des souvenirs inoubliables,<br>et surtout... toi !</p>
+
+      <div class="mid-row">
+        <div class="polaroid" aria-hidden="true">
+          <div class="polaroid-photo">
+            <img src="images/01.jpg" alt="" loading="eager" />
+          </div>
+          <p class="polaroid-caption" data-i="polaroidCaption">Le monde<br>t'attend... <span class="polaroid-heart">♡</span></p>
+        </div>
+
+        <div class="mid-center">
+          <div class="divider" aria-hidden="true"><span>♡</span></div>
+          <div class="compass" aria-hidden="true">
+            <div class="compass-ring">
+              <span class="compass-n">N</span>
+              <span class="compass-e">E</span>
+              <span class="compass-s">S</span>
+              <span class="compass-o">O</span>
+              <svg class="compass-needle" viewBox="0 0 100 100" width="72" height="72">
+                <polygon points="50,10 57,50 50,90 43,50" fill="currentColor" opacity="0.9"/>
+                <circle cx="50" cy="50" r="4.5" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="stamp stamp--badge" aria-hidden="true">
+          <span class="stamp-badge-plane">✈</span>
+          <span class="stamp-badge-label" data-i="badgeLabel">Destination</span>
+          <span class="stamp-badge-value" data-i="badgeValue">30 ANS</span>
+          <span class="stamp-badge-note" data-i="badgeNote">Parce que tu mérites<br>le plus beau<br>des voyages ! ♡</span>
+        </div>
+      </div>
+
+      <button id="btn-open" class="btn-open" type="button" aria-label="Ouvrir mon passeport">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="5" y="11" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span data-i="openButton">Ouvrir mon passeport</span>
+      </button>
+
+      <div class="divider" aria-hidden="true"><span>♡</span></div>
+      <p class="home-footer" data-i="footer">Un passeport pour une vie pleine d'aventures</p>
+    </div>
+
+    <!-- Globe décoratif bas droite -->
+    <svg class="globe-deco" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="2"/>
+      <ellipse cx="100" cy="100" rx="95" ry="38" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <ellipse cx="100" cy="100" rx="95" ry="70" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="5" y1="100" x2="195" y2="100" stroke="currentColor" stroke-width="1.2"/>
+      <ellipse cx="100" cy="100" rx="38" ry="95" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <ellipse cx="100" cy="100" rx="70" ry="95" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="100" y1="5" x2="100" y2="195" stroke="currentColor" stroke-width="1.2"/>
+    </svg>
+
+  </section>
+
+  <!-- ============ ECRAN 2 : PASSEPORT ============ -->
+  <section id="screen-passport" class="screen screen-passport" aria-hidden="true">
+
+    <div class="paper-texture paper-texture--dark" aria-hidden="true"></div>
+
+    <header class="passport-topbar">
+      <button id="btn-home" class="icon-btn" type="button" aria-label="Retour à l'accueil">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 11.5 12 4l8 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="progress-wrap" role="status" aria-live="polite">
+        <span id="progress-text" class="progress-text">Page 1 / 11</span>
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+      </div>
+      <div class="icon-btn-spacer" aria-hidden="true"></div>
+    </header>
+
+    <div id="pages-viewport" class="pages-viewport">
+      <div id="pages-track" class="pages-track"></div>
+    </div>
+
+    <footer class="passport-nav">
+      <button id="btn-prev" class="nav-btn" type="button" aria-label="Page précédente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div id="dots" class="dots" aria-hidden="true"></div>
+      <button id="btn-next" class="nav-btn" type="button" aria-label="Page suivante">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </footer>
+
+  </section>
+
+  <div id="sr-announcer" class="sr-only" aria-live="polite"></div>
+
+  <script src="activities.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
