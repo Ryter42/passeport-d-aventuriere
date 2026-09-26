@@ -2,11 +2,10 @@
  * =====================================================================
  * SCRIPT PRINCIPAL DU PASSEPORT NUMÉRIQUE
  * =====================================================================
- * Version "photo plein écran" : chaque page affiche uniquement l'image
- * en plein cadre, avec le numéro de page et la navigation en overlay.
- * Les champs title/description/links de activities.js sont conservés
- * dans la structure de données (pour une évolution future) mais ne
- * sont plus affichés à l'écran.
+ * Chaque page affiche l'image entière (non rognée) dans un cadre avec
+ * une légère bordure dorée, avec le numéro de page et la navigation en
+ * overlay. Les champs title/description/links de activities.js sont
+ * conservés dans la structure de données mais ne sont pas affichés.
  * =====================================================================
  */
 (function () {
@@ -46,7 +45,6 @@
     });
   }
 
-  /* ---------- Génération des pages : image plein écran uniquement ---------- */
   function buildPages() {
     const frag = document.createDocumentFragment();
 
