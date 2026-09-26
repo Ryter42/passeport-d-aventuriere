@@ -38,6 +38,6 @@ const activities = [
   { id: 7, image: "images/07.jpg", alt: "Photo souvenir 7", stamp: "07", title: "", description: "", links: [] },
   { id: 8, image: "images/08.jpg", alt: "Photo souvenir 8", stamp: "08", title: "", description: "", links: [] },
   { id: 9, image: "images/09.jpg", alt: "Photo souvenir 9", stamp: "09", title: "Presque à la fin", description: "", links: [{ label: "Écouter", url: "https://open.spotify.com/", icon: "music" }] },
-  { id: 10, image: "images/10.jpg", alt: "Photo souvenir 10", stamp: "10", title: "", description: "", links: [] },
-  { id: 11, image: "images/11.jpg", alt: "Photo souvenir 11", stamp: "11", title: "Merci pour tout", description: "La fin de ce petit passeport, mais pas de l'aventure.", links: [{ label: "Un dernier mot", url: "https://example.com/", icon: "heart" }] }
+  // { id: 10, image: "images/10.jpg", alt: "Photo souvenir 10", stamp: "10", title: "", description: "", links: [] },
+  // { id: 11, image: "images/11.jpg", alt: "Photo souvenir 11", stamp: "11", title: "Merci pour tout", description: "La fin de ce petit passeport, mais pas de l'aventure.", links: [{ label: "Un dernier mot", url: "https://example.com/", icon: "heart" }] }
 ];
